@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<div class = 'upload_background'>
+	
+		<div class = 'loading' style = 'display:none;'>
+			<img src = '/static/img/processing.gif' alt = '' />
+		</div>
+		<br>
+		
+		<form class = 'uploading-form' action = "{{ url_for('process') }}" method = 'POST' enctype='multipart/form-data'>
+			<input class="upload" type="file" name="file-name" accept="*" multiple>
+			<br><br>
+			<input type = 'submit' value = 'Activate Process' class = 'upload-button' onclick="$('.loading').show();">
+		</form>
+		<br>
+	</div>
+
+{% endblock %}

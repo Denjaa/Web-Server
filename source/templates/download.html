@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<div class = 'pageUpload'>
+		
+		<br>
+		
+		<form action = '{{ url_for('download') }}' method = 'post'>
+			<button name = 'dowload' type = 'submit' class = 'download_btn'>Download File</button>
+		</form>
+		
+		<br>
+		
+
+{% endblock %}

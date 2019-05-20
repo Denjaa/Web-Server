@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>File Uploader</title>
+	<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+
+<body>
+	
+	<div class = 'mainBody'>
+	
+		<div class = 'top'>
+			<div class = 'logo'>
+				<img src = '/static/img/dnb.gif' alt='' style="width:250px;height:60px;" />
+			</div>
+			<p> INPUT HANDLER </p>
+		</div>
+
+		<div class = 'mainBox'>
+			{% block content %}
+			{% endblock %}
+		</div>
+		
+		<div class = 'bottom'>
+			<p> 2019 © All rights reserved. </p>
+		</div>
+	</div>
+	
+</body>
